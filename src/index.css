@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
+@import url("bootstrap");
 
 :root {
     --dcblue: #0282f9;
     --footer-gray: #303030;
+    --main-bg: #1c1c1c;
 }
 
 body {
@@ -31,6 +32,53 @@ header {
 
 main {
     color: white;
+    background: var(--main-bg);
+    text-align: center;
+
+    #jumbotron {
+        height: 400px;
+        background-image: url(../public/img/jumbotron.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .container {
+        position: relative;
+    }
+
+    .badge {
+        padding: 1rem 1.5rem;
+        background: var(--dcblue);
+        position: absolute;
+        z-index: 3;
+        top: 0%;
+        left: 0%;
+        transform: translateY(-50%);
+    }
+
+    .card {
+        background: var(--main-bg);
+        color: white;
+        font-size: 0.75rem;
+        text-align: left;
+
+        img {
+            max-height: 180px;
+            min-width: 100%;
+            max-width: 160px;
+            object-position: top;
+            object-fit: cover;
+
+            /* come dovrei fare per fare in modo che la prima e l'ultima immagine non abbiano i bordi bianchi? */
+        }
+    }
+
+    button {
+        background-color: var(--dcblue);
+        color: white;
+        padding: 1rem 3rem;
+        border: none;
+    }
 }
 
 footer {
