@@ -4,8 +4,11 @@ export default function () {
 
 
     return (
-        <main>
-            <span className="text-danger">-- Content goes here --</span>
+
+        <main className="bg-black">
+            <div className="container py-5">
+                <h2 className="text-white">-- Content goes here --</h2>
+            </div>
         </main>
     )
 }
