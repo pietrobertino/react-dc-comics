@@ -1,0 +1,13 @@
+body {
+    font-style: 'Open Sans Variable', sans-serif;
+}
+
+footer {
+
+    nav {
+        background-color: #0282f9;
+    }
+}
+
+/* Non riesco ad installare bootstrap, ho dovuto usare la CDN */
+/* Come mai non mi prende il font? */

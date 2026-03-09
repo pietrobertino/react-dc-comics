@@ -1,9 +1,11 @@
+import FooterNavbar from "./FooterNavbar"
+
 export default function () {
 
 
     return (
         <footer>
-            <nav></nav>
+            <FooterNavbar />
             <div></div>
             <div>SOCIAL</div>
         </footer>

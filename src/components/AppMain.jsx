@@ -5,7 +5,7 @@ export default function () {
 
     return (
         <main>
-            <span>-- Content goes here --</span>
+            <span className="text-danger">-- Content goes here --</span>
         </main>
     )
 }
