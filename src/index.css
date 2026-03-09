@@ -3,6 +3,7 @@
 
 :root {
     --dcblue: #0282f9;
+    --footer-gray: #303030;
 }
 
 body {
@@ -28,10 +29,47 @@ header {
     }
 }
 
+main {
+    color: white;
+}
+
 footer {
+    color: white;
 
     nav {
         background-color: var(--dcblue);
+
+    }
+
+    #footer-body {
+        background-image: url(../public/img/footer-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -2;
+
+        #dc-background-logo {
+            position: absolute;
+            top: -25%;
+            right: 10%;
+            z-index: -1;
+        }
+    }
+
+    #footer-social {
+        background: var(--footer-gray);
+
+        button {
+            background: var(--footer-gray);
+            color: white;
+            border-color: var(--dcblue);
+            padding: 1rem;
+            font-weight: bolder;
+        }
+
+        a {
+            color: var(--dcblue);
+            font-weight: bolder;
+        }
     }
 }
 

@@ -1,4 +1,6 @@
 import FooterNavbar from "./FooterNavbar"
+import FooterBody from "./FooterBody"
+import FooterSocial from "./FooterSocial"
 
 export default function () {
 
@@ -6,8 +8,8 @@ export default function () {
     return (
         <footer>
             <FooterNavbar />
-            <div></div>
-            <div>SOCIAL</div>
+            <FooterBody />
+            <FooterSocial />
         </footer>
     )
 }
