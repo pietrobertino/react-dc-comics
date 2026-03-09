@@ -1,13 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+:root {
+    --dcblue: #0282f9;
+}
+
 body {
-    font-style: 'Open Sans Variable', sans-serif;
+    font-family: "Open Sans", sans-serif;
+}
+
+header {
+    nav {
+
+        font-size: 0.75rem;
+        font-weight: bolder;
+
+        li {
+            padding: 0 0.5rem;
+
+        }
+
+        .current {
+            color: var(--dcblue);
+            border-bottom: 2px solid var(--dcblue);
+
+        }
+    }
 }
 
 footer {
 
     nav {
-        background-color: #0282f9;
+        background-color: var(--dcblue);
     }
 }
 
+
+
 /* Non riesco ad installare bootstrap, ho dovuto usare la CDN */
-/* Come mai non mi prende il font? */
+/* Non riesco nemmeno ad installare il font, anche lì ho dovuto usare CDN */
