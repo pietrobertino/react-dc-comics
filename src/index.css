@@ -37,7 +37,7 @@ main {
 
     #jumbotron {
         height: 400px;
-        background-image: url(../public/img/jumbotron.jpg);
+        background-image: url(/img/jumbotron.jpg);
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -90,7 +90,7 @@ footer {
     }
 
     #footer-body {
-        background-image: url(../public/img/footer-bg.jpg);
+        background-image: url(/img/footer-bg.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         z-index: -2;

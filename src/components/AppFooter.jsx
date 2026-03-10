@@ -2,7 +2,7 @@ import FooterNavbar from "./FooterNavbar"
 import FooterBody from "./FooterBody"
 import FooterSocial from "./FooterSocial"
 
-export default function () {
+export default function AppFooter() {
 
 
     return (

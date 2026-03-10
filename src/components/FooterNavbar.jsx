@@ -1,4 +1,4 @@
-export default function () {
+export default function FooterNavbar() {
 
     return (
         <nav className="py-5">

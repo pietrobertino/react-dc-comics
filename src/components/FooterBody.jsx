@@ -1,4 +1,4 @@
-export default function () {
+export default function FooterBody() {
 
     return (
         <div id="footer-body" className="position-relative">
