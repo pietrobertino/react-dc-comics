@@ -223,6 +223,34 @@ const navbar = [
 
 ]
 
+const footerNavbar = [
+  {
+    id: 1,
+    url: "./img/buy-comics-digital-comics.png",
+    text: "DIGITAL COMICS"
+  },
+  {
+    id: 2,
+    url: "./img/buy-comics-merchandise.png",
+    text: "DC MERCHANDISE"
+  },
+  {
+    id: 3,
+    url: "./img/buy-comics-subscriptions.png",
+    text: "SUBSCRIPTION"
+  },
+  {
+    id: 4,
+    url: "./img/buy-comics-shop-locator.png",
+    text: "COMIC SHOP LOCATOR"
+  },
+  {
+    id: 5,
+    url: "./img/buy-dc-power-visa.svg",
+    text: "DC POWER VISA"
+  }
+]
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -231,7 +259,7 @@ function App() {
     <>
       <AppHeader navbar={navbar} />
       <AppMain comics={comics} />
-      <AppFooter />
+      <AppFooter footerNavbar={footerNavbar} />
     </>
   )
 }

@@ -1,29 +1,15 @@
-export default function FooterNavbar() {
+export default function FooterNavbar({ footerNavbar }) {
 
     return (
-        <nav className="py-5">
+        <nav className="py-5" id="footer-navbar">
             <div className="container">
-                <div className="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-3">
-                    <div className="col">
-                        <img src="./img/buy-comics-digital-comics.png" className="w-25" alt="digital-comics" />
-                        <span className="ms-3">DIGITAL COMICS</span>
-                    </div>
-                    <div className="col">
-                        <img src="./img/buy-comics-digital-comics.png" className="w-25" alt="digital-comics" />
-                        <span className="ms-3">DIGITAL COMICS</span>
-                    </div>
-                    <div className="col">
-                        <img src="./img/buy-comics-digital-comics.png" className="w-25" alt="digital-comics" />
-                        <span className="ms-3">DIGITAL COMICS</span>
-                    </div>
-                    <div className="col">
-                        <img src="./img/buy-comics-digital-comics.png" className="w-25" alt="digital-comics" />
-                        <span className="ms-3">DIGITAL COMICS</span>
-                    </div>
-                    <div className="col">
-                        <img src="./img/buy-comics-digital-comics.png" className="w-25" alt="digital-comics" />
-                        <span className="ms-3">DIGITAL COMICS</span>
-                    </div>
+                <div className="row row-cols-1 row-cols-md-2 row-cols-lg-5 g-3">
+                    {footerNavbar.map(navItem => (
+                        <div className="col d-flex align-items-center justify-content-around" key={navItem.id}>
+                            <img src={navItem.url} alt="" />
+                            <span className="text-center">{navItem.text}</span>
+                        </div>
+                    ))}
                 </div>
             </div>
         </nav>

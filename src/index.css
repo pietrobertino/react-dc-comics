@@ -89,6 +89,14 @@ footer {
 
     }
 
+    #footer-navbar {
+
+        img {
+            max-width: 42px;
+            max-height: 42px;
+        }
+    }
+
     #footer-body {
         background-image: url(/img/footer-bg.jpg);
         background-repeat: no-repeat;
