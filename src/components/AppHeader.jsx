@@ -1,69 +1,7 @@
-export default function AppHeader() {
+export default function AppHeader({ navbar }) {
 
     const dcLogo = "./img/dc-logo.png";
-    const navbar = [
-        {
-            id: 1,
-            text: "CHARACTERS",
-            active: false,
-            url: "#"
-        },
-        {
-            id: 2,
-            text: "COMICS",
-            active: true,
-            url: "#"
-        },
-        {
-            id: 3,
-            text: "MOVIES",
-            active: false,
-            url: "#"
-        },
-        {
-            id: 4,
-            text: "TV",
-            active: false,
-            url: "#"
-        },
-        {
-            id: 5,
-            text: "GAMES",
-            active: false,
-            url: "#"
-        },
-        {
-            id: 6,
-            text: "COLLECTIBLES",
-            active: false,
-            url: "#"
-        },
-        {
-            id: 7,
-            text: "VIDEOS",
-            active: false,
-            url: "#"
-        },
-        {
-            id: 8,
-            text: "FANS",
-            active: false,
-            url: "#"
-        },
-        {
-            id: 9,
-            text: "NEWS",
-            active: false,
-            url: "#"
-        },
-        {
-            id: 10,
-            text: "SHOP",
-            active: false,
-            url: "#"
-        }
 
-    ]
 
 
     return (

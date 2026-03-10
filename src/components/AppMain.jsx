@@ -1,7 +1,7 @@
 import { main } from "@popperjs/core";
 import AppCard from "./AppCard";
 
-export default function AppMain(comics) {
+export default function AppMain({ comics }) {
 
 
 
