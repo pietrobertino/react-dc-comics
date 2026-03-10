@@ -1,6 +1,6 @@
 import { main } from "@popperjs/core";
 
-export default function () {
+export default function AppMain() {
 
     const comics = [
         {
@@ -168,7 +168,7 @@ export default function () {
                 </div>
                 <div className="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-3">
                     {comics.map(comic => (
-                        <div className="col">
+                        <div className="col" key={comic.id}>
                             <div className="card rounded-0 w-100">
                                 <img src={comic.thumb} alt={comic.title} className="card-img-top rounded-0" />
                                 <div className="card-title w-100 py-3">{comic.series.toUpperCase()}</div>

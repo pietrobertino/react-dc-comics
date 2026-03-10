@@ -1,4 +1,4 @@
-export default function () {
+export default function AppHeader() {
 
     const dcLogo = "./img/dc-logo.png";
     const navbar = [
@@ -78,7 +78,7 @@ export default function () {
                     <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
                         <ul class="navbar-nav">
                             {navbar.map(item => (
-                                <li className="nav-item">
+                                <li className="nav-item" key={item.id}>
                                     <a href={item.url} className={item.active ? "current nav-link" : "nav-link"}>{item.text}</a>
                                 </li>
                             ))}
